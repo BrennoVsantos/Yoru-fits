@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+*   ::selection {
+    background-color: rgba(255, 89, 255, 0.5);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(14, 13, 13);
+    color: aliceblue;
+    box-shadow: 1px 10px 15px rgba(0, 0, 0, 0.349);
+}
+
+nav img{
+    width: 100px;
+    margin-left: 150px;
+    padding: 5px;
+}
+
+nav img:hover{
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li{
+    padding-left: 15px;
+    list-style-type: none;
+    margin: auto;
+    margin-right: 50px;
+    display: block;
+    transition: all ease .1s;
+}
+
+nav li button{
+    outline: 1px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+nav a:hover{
+    font-size: 1.1em;
+    color: blueviolet;
+    cursor: pointer;
+}
+
+nav button{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: transparent;
+}
+
+nav button:hover{
+    background-color: rgba(240, 248, 255, 0.171);
+}
+
+nav button a:hover{
+    color: aliceblue    ;
+}
+
+
+#jacket{
+    background-color: rgb(26, 24, 24);
+    padding-top: 30 px;
+}
+
+.imagem img{
+    width: 900px;
+    margin-left: 120px;
+}
+
+.container-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info{
+    margin-top: 65px;
+    color: aliceblue;
+}
+
+.info h1{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+.info h2{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.ptxt{
+    width: 480px;
+    text-align: justify;
+}
+
+.tamanhos{
+    margin-top: 20px;
+}
+
+.tamanhos button{
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    font-weight: bold;
+    margin-right: 15px;
+    color: aliceblue;
+    transition: all ease .5s;
+}
+
+.tamanhos button:hover{
+    background-color: rgba(240, 248, 255, 0.253);
+}
+
+.cart button{
+    margin-top: 20px;
+    width: 170px;
+    height: 35px;
+    margin-left: 43px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    font-weight: bold;
+    color: aliceblue;
+    transition: all ease .5s;
+}
+
+.cart button i{
+    margin-left: 5px;
+}
+
+.cart button:hover{
+    background-color: rgba(240, 248, 255, 0.253);
+}
+
+.tabela table{
+    color: aliceblue;
+    margin-top: 50px;
+    border: 1px solid white;
+    border-collapse: collapse;
+
+}.tabela table td, th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.container-reverse-flex{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#calca{
+    background-image: linear-gradient(to bottom,rgb(0, 0, 0), rgb(26, 24, 24) );
+}
+
+.info2{
+    margin-top: 130px;
+    color: aliceblue;
+    margin-right: 300px;
+}
+
+.info2 h1{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+.info2 h2{
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.img-calca img{
+    width: 700px;
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+#calca select{
+    background-color: transparent;
+    color: rgb(255, 0, 255);
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    outline: 1px solid white;
+    border: none    ;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.tabela2{
+    margin-left: 50px;
+}
+
+
+#acessorios{
+    background-color: rgb(26, 24, 24);
+}
+
+#acessorios h1{
+    color: blueviolet;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#acessorios h1::after{
+    content: '';
+    display: block;
+    width: 500px;
+    height: 2px;
+    background-color: blueviolet;
+    margin: auto;
+    box-shadow: 4px 4px 15px rgb(255, 35, 207);
+    margin-top: 10px;
+
+}
+
+.card{
+    background-color: rgba(240, 248, 255, 0.171);
+    width: 300px;
+    margin: 50px;
+    border-radius: 15px;
+    outline: 1px solid white;
+    box-shadow: 4px 4px 15px rgb(255, 251, 255);
+    margin-left: 105px;
+    transition: all ease .5s;
+    margin-bottom: 150px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgba(240, 248, 255, 0.267);
+    box-shadow: 15px 15px 25px rgba(255, 251, 255, 0.397);
+    cursor: pointer;
+}
+
+.card img{
+    width: 300px;
+}
+
+.card .cardinfo{
+    background-color: rgba(251, 240, 255, 0.342);
+    padding: 15px;
+    border-radius: 0px 0px 15px 15px;
+    color: aliceblue;
+    font-size: .8em;
+}
+
+.card .nomeprod{
+    color: rgb(255, 240, 252);
+    text-align: center;
+    background-color: rgba(252, 0, 218, 0.411);
+}
+
+#techwear{
+    background-color: black;
+}
+
+.techimg{
+    margin: auto;
+    margin-left: 550px;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.techimg img{
+    width: 420px;  
+    border-radius: 15px; 
+    outline: 2px solid blueviolet;
+    box-shadow: 5px 5px 20px rgba(255, 51, 255, 0.397);
+}
+
+.info3{
+    margin-top: 65px;
+    color: aliceblue;
+    margin: auto;
+    margin-right: 400px;
+}
+
+.info3 h1{
+    font-weight: 700;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+footer{
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+footer i{
+    color: aliceblue;
+    font-size: 3em;
+    margin: 20px;
+    transition: .2s;
+}
+footer i:hover{
+    color: blueviolet;
+    font-size: 3.1em;
+    margin: 20px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.copyright{
+    margin: 20px;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
