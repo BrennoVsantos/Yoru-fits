@@ -20,6 +20,27 @@
 </head>
 
 <body>
+    <div class="loguin" id="loguinis">
+        <div class="form">
+            <button id="close" class="close" onclick="off()">X</button>
+
+            <div class="loguin-top">
+                <img src="img/Yoru Logo.png" alt="">
+                <input type="text" id="nome" class="nome" name="name" placeholder="Nome: ">
+                <input type="password" id="senha" class="senha" name="senha" placeholder="Senha: " >
+                <button onclick="entrar()">Enviar</button>
+            </div>
+
+            <div class="loguin-footer">
+                <input type="checkbox" id="lembrar" class="lembrar">
+                <label for="lembrar">lembrar de mim</label>
+
+                <a href="#">Esqueci minha senha</a>
+            </div>
+        </div>
+        
+    </div>
+
     <nav>
         <img src="img/Yoru Logo.png" alt="Logo">
         <ul>
@@ -27,7 +48,7 @@
             <li><a href="#"> Sobre </a></li>
             <li><a href="#"> Contato </a></li>
             <li><a href="#"> Teste </a></li>
-            <li><button onclick="entrar()"><a href="#"> Entrar </a></button></li>
+            <li><button onclick="loguinho()" id="btn"><a href="#"> Entrar </a></button></li>
         </ul>
     </nav>
 
@@ -290,8 +311,21 @@
 
     <script>
         function entrar(){
-            alert("É so um teste, não da pra entrar né! ")
+            alert("É so um teste, não da pra entrar né! ");
         }
+
+        function loguinho(){
+
+            let on = document.getElementById("loguinis");
+            on.style.display = "flex"; 
+        }
+
+        function off(){
+            let off = document.getElementById("loguinis")
+            off.style.display = 'none';
+        }
+
+
     </script>
 </body> 
 </html>
